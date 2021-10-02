@@ -4,3 +4,4 @@ project(base)
 
 add_subdirectory (basic_1)
 add_subdirectory (basic_2)
+add_subdirectory (basic_3)
