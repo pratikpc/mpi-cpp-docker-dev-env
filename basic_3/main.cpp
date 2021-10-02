@@ -27,10 +27,10 @@ int main(int argc, char **argv)
 
 	// --- TASK 2: MPI_Barrier
 	// processes wait until all processes arrived here
-	if( rank == 0 )
-	{
-		MPI_Barrier( MPI_COMM_WORLD );
-	}
+	// FIX
+	// We must try to reach the Barrier
+	// From every process
+	MPI_Barrier(MPI_COMM_WORLD);
 
 	// TASK 3: MPI_Allreduce
 	double locval = rank * 10;
